@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rensselaer Webmail</title>
+</head>
+<style>
+    body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* CSS for header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #363436;
+  font-family: "Sriracha", cursive;
+
+  
+}
+
+#pic{
+    background-color: #363436;
+    max-width: 175px;
+    display: block;
+    float: left;
+    height: auto;
+    margin-left: 15%;
+}
+
+.header .logo {
+  font-size: 25px;
+  font-family: "Sriracha", cursive;
+  color: #000;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #363436;
+  margin-right: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 35px 20px;
+  font-size: larger
+}
+
+</style>
+<body style="background-color: #363436;">
+    <button onclick="topFunction()" id="backtotop" title="Go to top">Top</button>
+  <header class="header">
+    <div id="rensselaerLogo"><a href="https://www.rpi.edu/"><img src="./images/RPIlogo.png" alt="Rensselaer" id="pic"></a></div>
+    <div class="nav-items">
+      <a href="./index.html">Home</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+  </header>
+
+
+  <script>
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+  </script>
+    
+</body>
+
+
+</html>
