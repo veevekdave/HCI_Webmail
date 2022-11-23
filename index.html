@@ -57,7 +57,6 @@
 
 </style>
 <body>
-    <button onclick="topFunction()" id="backtotop" title="Go to top">Top</button>
   <header class="header">
     <div id="rensselaerLogo"><a href="https://www.rpi.edu/"><img src="./RPIlogo.png" alt="Rensselaer" id="pic"></a></div>
     <div class="nav-items">
@@ -65,29 +64,6 @@
       <a href="./contact.html">Contact</a>
     </div>
   </header>
-
-
-  <script>
-    let mybutton = document.getElementById("backtotop");
-
-// When the user scrolls down 50px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
-    mybutton.style.display = "block";
-} else {
-    mybutton.style.display = "none";
-}
-}
-
-function topFunction() {
-document.body.scrollTop = 0;
-document.documentElement.scrollTop = 0;
-}
-  </script>
     
 </body>
-
-
 </html>
