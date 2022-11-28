@@ -123,6 +123,11 @@
   left:30px;
   top:140px;
 }
+.side-bar2{
+  position:fixed;
+  left:30px;
+  top:500px;
+}
 .body-lyt {
   display: grid;
   grid-template-rows: 100px 1fr;
@@ -159,19 +164,30 @@
       <div style="align-content: center; margin-top: 1%;" class="container">
               <!-- <br/> -->
       <div class="layout">
-        <div>
-          <div class="side-bar">
-            <a class="compose" href="#">
-              <div class="text">Compose</div>
-            </a>
-            <div><h2>Inbox</h2></div>
-            <div><h2>Stared</h2></div>
-            <div><h2>Snoozed</h2></div>
-            <div><h2>Important</h2></div>
-            <div><h2>Sent</h2></div>
-            <div><h2>Draft</h2></div>
-            <div><h2>Categories</h2></div>
-          </div>
+        <div class="spreadItems">
+          <div>
+            <div class="side-bar">
+              <a class="compose" href="#">
+                <div class="text">Compose</div>
+              </a>
+              <div><h4>Inbox</h4></div>
+              <div><h4>Stared</h4></div>
+              <div><h4>Snoozed</h4></div>
+              <div><h4>Important</h4></div>
+              <div><h4>Sent</h4></div>
+              <div><h4>Draft</h4></div>
+              <div><h4>Categories</h4></div>
+            </div>
+          </div> 
+          <div>
+            <div class="side-bar2">
+              <h3>Labels</h3>
+              <div><h4>Label 1</h4></div>
+              <div><h4>Label 2</h4></div>
+              <div><h4>Label 3</h4></div>
+              <div><h4>Label 4</h4></div>
+            </div>
+          </div>            
         </div>
           <div class="body">
               <div class="row justify-content-center">
