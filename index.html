@@ -113,45 +113,102 @@
     box-shadow: none;
 }
 
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+
+.side-bar{
+  position:fixed;
+  left:30px;
+  top:140px;
+}
+.body-lyt {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+.emails {
+  display: flex;
+  flex-direction: column;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
 </style>
 <body>
-  <header class="header">
-    <div id="rensselaerLogo"><a href="https://www.rpi.edu/"><img src="./RPIlogo.png" alt="Rensselaer" id="pic"></a></div>
-    <div class="nav-items">
-      <a href="./index.html">Home</a>
-      <a href="#">Help</a>
-      <a href="#">Settings</a>
-      <a href="#">Account</a>
-    </div>
-  </header>
-  <div style="align-content: center; margin-top: 1%;" class="container">
-    <!-- <br/> -->
-	<div class="row justify-content-center">
-                        <div class="col-12 col-md-10 col-lg-8">
-                            <form class="card card-sm">
-                                <div class="card-body row no-gutters align-items-center">
-                                    <div class="col-auto">
-                                        <i class="fas fa-search h4 text-body"></i>
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col">
-                                        <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
-                                    </div>
-                                    <!--end of col-->
-                                    <div class="col-auto">
-                                        <button style="background-color: rgb(232, 82, 82); border-color: rgb(232, 82, 82);" class="btn btn-lg btn-success" type="submit">Search</button>
-                                    </div>
-                                    <!--end of col-->
-                                </div>
-                            </form>
+  <div class="body-lyt">
+      <header class="header">
+        <div id="rensselaerLogo"><a href="https://www.rpi.edu/"><img src="./RPIlogo.png" alt="Rensselaer" id="pic"></a></div>
+        <div class="nav-items">
+          <a href="./index.html">Home</a>
+          <a href="#">Help</a>
+          <a href="#">Settings</a>
+          <a href="#">Account</a>
+        </div>
+      </header>
+      <div style="align-content: center; margin-top: 1%;" class="container">
+              <!-- <br/> -->
+      <div class="layout">
+        <div>
+          <div class="side-bar">
+            <a class="compose" href="#">
+              <div class="text">Compose</div>
+            </a>
+            <div><h2>Inbox</h2></div>
+            <div><h2>Stared</h2></div>
+            <div><h2>Snoozed</h2></div>
+            <div><h2>Important</h2></div>
+            <div><h2>Sent</h2></div>
+            <div><h2>Draft</h2></div>
+            <div><h2>Categories</h2></div>
+          </div>
+        </div>
+          <div class="body">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                    <form class="card card-sm">
+                        <div class="card-body row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <i class="fas fa-search h4 text-body"></i>
+                            </div>
+                            <!--end of col-->
+                            <div class="col">
+                                <input class="form-control form-control-lg form-control-borderless" type="search" placeholder="Search topics or keywords">
+                            </div>
+                            <!--end of col-->
+                            <div class="col-auto">
+                                <button style="background-color: rgb(232, 82, 82); border-color: rgb(232, 82, 82);" class="btn btn-lg btn-success" type="submit">Search</button>
+                            </div>
+                            <!--end of col-->
                         </div>
-                        <!--end of col-->
-                    </div>
-</div>
-
-<a class="compose" href="#">
-  <div class="text">Compose</div>
-</a>
-    
+                    </form>
+                </div>
+                <!--end of col-->
+            </div>
+            <div class="row justify-content-center">
+              <div class="emails">
+                <div class="email1">
+                  <div class="items">
+                    <div>CheckBox</div>
+                    <div>Star</div>
+                    <div>Important</div>
+                    <div>Subject</div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>   
+  </div>
 </body>
 </html>
